@@ -1,1 +1,10 @@
-<p>task-item works!</p>
+<div class="task-item">
+  <h3>{{ task.title }}</h3>
+  <!-- виводимо заголовок звертаючись до властивості title об'єкта tasks -->
+  <p *ngIf="task.description"><strong>Опис:</strong> {{ task.description }}</p>
+  <!-- виводимо опис звертаючись до властивості description об'єкта tasks, якщо вона є -->
+  <p><strong>Виконавець:</strong> {{ task.assignee }}</p>
+  <!-- виводимо виконавця звертаючись до властивості assignee об'єкта tasks -->
+  <p><strong>Дата виконання:</strong> {{ task.dueDate }}</p>
+  <!-- виводимо дату виконання звертаючись до властивості dueDate об'єкта tasks -->
+</div>
