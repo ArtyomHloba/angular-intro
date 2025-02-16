@@ -10,4 +10,8 @@ import { tasks } from '../core/moc_data/tasks'
 })
 export class TaskListComponent {
   myTasks: Task[] = tasks
+
+  deleteTask (index: number): void {
+    console.log(`Видалення завдання за iндексом: ${index}`)
+  }
 }
